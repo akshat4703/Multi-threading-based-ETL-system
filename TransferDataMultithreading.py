@@ -3,7 +3,7 @@ import threading
 import time
 
 def transfer_chunk(rows):
-    conn = mysql.connector.connect(host="localhost", user="root", password="Akshat@4703", database="etl_db")
+    conn = mysql.connector.connect(host="localhost", user="root", password="password", database="etl_db")
     cursor = conn.cursor()
 
     for row in rows:
@@ -14,7 +14,7 @@ def transfer_chunk(rows):
     conn.close()
 
 def multithreading_transfer():
-    conn = mysql.connector.connect(host="localhost", user="root", password="Akshat@4703", database="etl_db")
+    conn = mysql.connector.connect(host="localhost", user="root", password="password", database="etl_db")
     cursor = conn.cursor()
     
     cursor.execute("SELECT * FROM source_table")
