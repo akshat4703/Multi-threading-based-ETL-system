@@ -3,7 +3,7 @@ import mysql.connector
 import time
 
 def import_export_transfer():
-    conn = mysql.connector.connect(host="localhost", user="root", password="Akshat@4703", database="etl_db")
+    conn = mysql.connector.connect(host="localhost", user="root", password="paasword", database="etl_db")
     cursor = conn.cursor()
 
     start_time = time.time()
