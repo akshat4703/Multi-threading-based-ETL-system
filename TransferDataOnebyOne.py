@@ -2,7 +2,7 @@ import mysql.connector
 import time
 
 def one_by_one_transfer():
-    conn = mysql.connector.connect(host="localhost", user="root", password="Akshat@4703", database="etl_db")
+    conn = mysql.connector.connect(host="localhost", user="root", password="password", database="etl_db")
     cursor = conn.cursor()
 
     # Fetching data
